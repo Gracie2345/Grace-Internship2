@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import SubHeader from "../images/subheader.jpg";
 import ExploreItems from "../components/explore/ExploreItems";
+import SubheaderImage from "../images/subheader.jpg";
 
 const Explore = () => {
   useEffect(() => {
@@ -12,15 +12,27 @@ const Explore = () => {
       <div className="no-bottom no-top" id="content">
         <div id="top"></div>
 
+        {/* Subheader banner section with increased height padding */}
         <section
-          id="subheader"
+          id="section-subheader"
           className="text-light"
-          style={{ background: `url("${SubHeader}") top` }}
+          style={{
+            background: `url(${SubheaderImage}) center center / cover no-repeat`,
+            padding: "110px 0 90px 0",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          <div className="center-y relative text-center">
+          <div className="center-y relative text-center" style={{ width: "100%" }}>
             <div className="container">
               <div className="row">
-                <div className="col-md-12 text-center">
+                <div 
+                  className="col-md-12 text-center"
+                  data-aos="fade-in"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="800"
+                >
                   <h1>Explore</h1>
                 </div>
                 <div className="clearfix"></div>
@@ -29,7 +41,7 @@ const Explore = () => {
           </div>
         </section>
 
-        <section aria-label="section">
+        <section id="section-explore" aria-label="section">
           <div className="container">
             <div className="row">
               <ExploreItems />

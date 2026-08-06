@@ -38,6 +38,64 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
+
+.skeleton-box {
+  background-color: #e2e8f0;
+  border-radius: 6px;
+  animation: pulseSkeleton 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseSkeleton {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+
+
+.de_carousel {
+  position: relative;
+}
+
+.de_carousel .owl-prev,
+.de_carousel .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: #333;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.de_carousel .owl-prev {
+  left: -25px;
+}
+
+.de_carousel .owl-next {
+  right: -25px;
+}
+
+.de_carousel .owl-prev:hover,
+.de_carousel .owl-next:hover {
+  background: #8364e2;
+  color: #fff;
+}
 .arrow_up:before {
 	content: "\21";
 }
