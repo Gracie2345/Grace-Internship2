@@ -3,6 +3,63 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Slider from "react-slick";
 
+// Custom Arrow Components with explicit styling
+const SamplePrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "-15px",
+        transform: "translateY(-50%)",
+        zIndex: 10,
+        cursor: "pointer",
+        backgroundColor: "white",
+        borderRadius: "50%",
+        width: "40px",
+        height: "40px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
+        border: "1px solid #ccc",
+      }}
+    >
+      <i className="fa fa-angle-left" style={{ color: "#333", fontSize: "20px" }}></i>
+    </div>
+  );
+};
+
+const SampleNextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "50%",
+        right: "-15px",
+        transform: "translateY(-50%)",
+        zIndex: 10,
+        cursor: "pointer",
+        backgroundColor: "white",
+        borderRadius: "50%",
+        width: "40px",
+        height: "40px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
+        border: "1px solid #ccc",
+      }}
+    >
+      <i className="fa fa-angle-right" style={{ color: "#333", fontSize: "20px" }}></i>
+    </div>
+  );
+};
+
 const HotCollections = () => {
   const [collections, setCollections] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,6 +86,9 @@ const HotCollections = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
     responsive: [
       { breakpoint: 1200, settings: { slidesToShow: 3 } },
       { breakpoint: 768, settings: { slidesToShow: 2 } },
@@ -39,7 +99,6 @@ const HotCollections = () => {
   return (
     <section id="section-collections" className="no-bottom">
       <div className="container">
-        {/* Removed data-aos="fade-up" from the div below */}
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
