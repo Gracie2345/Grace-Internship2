@@ -5,6 +5,7 @@ import SubheaderImage from "../images/subheader.jpg";
 const Explore = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    //DOes this work
   }, []);
 
   return (
