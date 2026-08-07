@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Grace-Internship2/static/css/main.2a613eef.css",
-    "main.js": "/Grace-Internship2/static/js/main.ba085c44.js",
+    "main.js": "/Grace-Internship2/static/js/main.4861c7e0.js",
     "static/js/787.0979ab29.chunk.js": "/Grace-Internship2/static/js/787.0979ab29.chunk.js",
     "static/media/icofont.woff": "/Grace-Internship2/static/media/icofont.dad3accba068281878f1.woff",
     "static/media/icofont.woff2": "/Grace-Internship2/static/media/icofont.9c33516aab48c61e3081.woff2",
@@ -29,11 +29,11 @@
     "static/media/slick.woff": "/Grace-Internship2/static/media/slick.295183786cd8a1389865.woff",
     "static/media/ethereum.svg": "/Grace-Internship2/static/media/ethereum.df265e367364f285053a1285ad8d418d.svg",
     "main.2a613eef.css.map": "/Grace-Internship2/static/css/main.2a613eef.css.map",
-    "main.ba085c44.js.map": "/Grace-Internship2/static/js/main.ba085c44.js.map",
+    "main.4861c7e0.js.map": "/Grace-Internship2/static/js/main.4861c7e0.js.map",
     "787.0979ab29.chunk.js.map": "/Grace-Internship2/static/js/787.0979ab29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a613eef.css",
-    "static/js/main.ba085c44.js"
+    "static/js/main.4861c7e0.js"
   ]
 }
